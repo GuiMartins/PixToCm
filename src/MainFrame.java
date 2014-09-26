@@ -16,64 +16,64 @@ public class MainFrame extends javax.swing.JFrame {
     public MainFrame() {
         super.setLocationRelativeTo(null);
         initComponents();
-        jLabel2.setVisible(false);
+        resultadoLabel.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        mainPanel = new javax.swing.JPanel();
+        larguraLabel = new javax.swing.JLabel();
+        larguraText = new javax.swing.JTextField();
+        resultadoLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
-        jPanel1.setName("jPanel1"); // NOI18N
+        mainPanel.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
+        mainPanel.setName("mainPanel"); // NOI18N
 
-        jLabel1.setText("Largura da tela (cm):");
-        jLabel1.setName("jLabel1"); // NOI18N
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        larguraLabel.setText("Largura da tela (cm):");
+        larguraLabel.setName("larguraLabel"); // NOI18N
+        larguraLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                larguraLabelMouseClicked(evt);
             }
         });
 
-        jTextField1.setColumns(2);
-        jTextField1.setName("jTextField1"); // NOI18N
-        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+        larguraText.setColumns(2);
+        larguraText.setName("larguraText"); // NOI18N
+        larguraText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField1KeyPressed(evt);
+                larguraTextKeyPressed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
+        mainPanel.setLayout(mainPanelLayout);
+        mainPanelLayout.setHorizontalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(larguraLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(larguraText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        mainPanelLayout.setVerticalGroup(
+            mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(mainPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(larguraLabel)
+                    .addComponent(larguraText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel2.setText("resultado");
-        jLabel2.setName("jLabel2"); // NOI18N
+        resultadoLabel.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        resultadoLabel.setText("resultado");
+        resultadoLabel.setName("resultadoLabel"); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -82,25 +82,25 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(jLabel2)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(resultadoLabel)
+                    .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
+                .addComponent(resultadoLabel)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-        jTextField1.addKeyListener
+    private void larguraTextKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_larguraTextKeyPressed
+        larguraText.addKeyListener
                 (
                     new KeyAdapter()
                     {
@@ -111,16 +111,16 @@ public class MainFrame extends javax.swing.JFrame {
                             if(key == KeyEvent.VK_ENTER)
                             {
                                int screenSize = getScreenResolution();
-                               double resp = screenSize/(Integer.parseInt(jTextField1.getText())*POLEGADA);
-                               jLabel2.setText(String.format("%.2f cm", resp));
-                               jLabel2.setVisible(true);
+                               double resp = screenSize/(Integer.parseInt(larguraText.getText())*POLEGADA);
+                               resultadoLabel.setText(String.format("%.2f cm", resp));
+                               resultadoLabel.setVisible(true);
                             }
                         }
                     }
                 );
-    }//GEN-LAST:event_jTextField1KeyPressed
+    }//GEN-LAST:event_larguraTextKeyPressed
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void larguraLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_larguraLabelMouseClicked
         URL url = null;
         try {
             url = new URL(link);
@@ -129,7 +129,7 @@ public class MainFrame extends javax.swing.JFrame {
         }
         openWebpage(url);
         
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_larguraLabelMouseClicked
     
     public static void openWebpage(URI uri)
     {
@@ -199,9 +199,9 @@ public class MainFrame extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel larguraLabel;
+    private javax.swing.JTextField larguraText;
+    private javax.swing.JPanel mainPanel;
+    private javax.swing.JLabel resultadoLabel;
     // End of variables declaration//GEN-END:variables
 }
